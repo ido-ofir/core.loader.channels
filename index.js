@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'core.plugin.channels',
+    name: 'core.loader.channels',
     init(definition, done) {
 
         var core = this;
@@ -19,7 +19,7 @@ module.exports = {
                         core.channel(name);
                     });
                 } else {
-                    console.warn(`core.plugin.channels - 'channels' defined on plugin '${ pluginDefinition.name }' should be an object or an array of strings. got ${ core.typeOf(channels) }`)
+                    console.warn(`core.loader.channels - 'channels' defined on plugin '${ pluginDefinition.name }' should be an object or an array of strings. got ${ core.typeOf(channels) }`)
                 }
             }
             next();
