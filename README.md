@@ -11,7 +11,7 @@ core.plugin(
     require('core.loader.channels')
 );
 
-// plugins can now declare actions on the plugin definition object:
+// plugins can now declare channels on the plugin definition object:
 core.plugin({
     name: 'test',
     channels: {
